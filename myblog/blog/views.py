@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 from .models import Blog
 
-# Create your views here.
+
 def home(request):
     blog_posts = Blog.objects.all()
     context = {"blog_posts": blog_posts}
