@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-2d8b9+v!a#$+#1o%&ip4t#euv_-g8kjluvla!-hnyu5_6kcd9e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "home/tenaciouscri/static",
+]
 
 
 # Application definition
@@ -124,3 +126,8 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
