@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "home/tenaciouscri/static",
+    "tenaciouscri.pythonanywhere.com",
 ]
 
 
