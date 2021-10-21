@@ -7,6 +7,6 @@
     <blog>
         <h1>{{ blog.title }}</h1>
         <p>{{ blog.date }}</p>
-        <p>{{ blog.body }}</p>
+        <p>{{ blog.body |safe}}</p>
     </blog>
 </html>
