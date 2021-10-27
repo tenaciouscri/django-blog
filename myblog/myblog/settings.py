@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",
+    'markdownify.apps.MarkdownifyConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,43 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #     from local_settings import *
 # except ImportError:
 #     pass
+
+# Markdownify
+
+MARKDOWNIFY = {
+    "default": {
+        "BLEACH": True,
+        "MARKDOWN_EXTENSIONS": [
+            'markdown.extensions.fenced_code',
+        ],
+        "STRIP": False,
+        "WHITELIST_ATTRS": [
+            'href',
+            'src',
+            'alt',
+        ],
+        "WHITELIST_TAGS": [
+            'a',
+            'abbr',
+            'acronym',
+            'b',
+            'blockquote',
+            'code',
+            'em',
+            'h1',
+            'h2',
+            'h3',
+            'h4',
+            'h5',
+            'h6',
+            'i',
+            'img',
+            'li',
+            'ol',
+            'p',
+            'pre',
+            'strong',
+            'ul',
+        ]
+    }
+}
