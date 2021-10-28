@@ -24,7 +24,3 @@ class Post(models.Model):
     
     class Meta:
         ordering = ['-date',]
-
-#title
-#body
-#date
