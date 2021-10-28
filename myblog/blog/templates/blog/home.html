@@ -8,11 +8,11 @@
         <h1>Blog</h1>
         {% for blog in blog_posts %}
         <p><a href= "/blog/{{blog.id}}/">{{blog.title}}</a>
+        </p>
         {% endfor %}
-        <br>
-        <br>
+        
         {% for post in posts %}
-        <a href= "/post/{{post.id}}">{{post.title}}</a>
+        <p></p><a href= "/post/{{post.id}}">{{post.title}}</a>
         </p>
         {% endfor %}
         <br>
