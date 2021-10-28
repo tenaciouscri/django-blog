@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    <p><a href="/blog/create">Create new post</a></p>
-    {% for blog in blog_posts %}
-        <p><a href="/blog/{{ blog.id }}/">{{  blog.title  }}</a></p>
-    {% endfor %}
-</body>
+<html>
+    <head>
+
+        <title>Blog</title>
+    </head>
+    <body>
+        <h1>Blog</h1>
+        {% for blog in blog_posts %}
+        <p><a href= "/blog/{{blog.id}}/">{{blog.title}}</a>
+        {% endfor %}
+        <br>
+        <br>
+        {% for post in posts %}
+        <a href= "/post/{{post.id}}">{{post.title}}</a>
+        </p>
+        {% endfor %}
+        <br>
+    </body>
 </html>
