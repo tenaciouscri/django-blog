@@ -18,6 +18,7 @@ from django.urls import include
 from blog import  views
 from django.conf.urls.static import static
 from django.conf import settings
+from blog import views
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -25,6 +26,7 @@ urlpatterns = [
     # path('post/<int:id>/', views.post, name="post"),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
+    path('update_server/', views.update, name="update")
 ]
 
 if settings.DEBUG:
