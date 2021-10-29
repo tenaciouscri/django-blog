@@ -1,5 +1,3 @@
-#! /usr/bin/env python3
-
 from git import Repo
 
 # rorepo is a Repo instance pointing to the git-python repository.
