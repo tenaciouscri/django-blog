@@ -33,7 +33,7 @@ def post(request, id=1):
 @csrf_exempt
 def update(request):
     if request.method == "POST":
-        repo = git.Repo("django-blog/")
+        repo = git.Repo("myblog/")
         origin = repo.remotes.origin
 
         origin.pull()
