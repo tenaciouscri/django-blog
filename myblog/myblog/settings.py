@@ -82,7 +82,7 @@ WSGI_APPLICATION = "myblog.wsgi.application"
 # Set DATABASE = 2 for Postgres 
 # pip install psycopg2 to use postgres in Django
 
-DATABASE = 2
+DATABASE = 1;
 
 if DEBUG and (DATABASE == 1):
     # Use SQLite Database
@@ -101,11 +101,24 @@ elif DEBUG and (DATABASE == 2):
             'NAME': 'django-blog',
             # set your user details
             'USER': 'postgres',
-            'PASSWORD': '(K)odina0506',
+            'PASSWORD': '',
             'HOST': 'localhost',
             'POST': '5432'
         }
     }
+    
+elif DEBUG and (DATABASE == 3):
+    # Use Pythonanywhere's integrated MySQL Database
+        DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'tenaciouscri$blog',
+            'USER': 'tenaciouscri',
+            'PASSWORD': 'mysqlroot',
+            'HOST': 'tenaciouscri.mysql.pythonanywhere-services.com'
+        }
+    }
+    
 else:
     # Use Production Dtabase e.g Postgres
     # Using SQLite Database for demonstration
