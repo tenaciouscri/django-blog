@@ -101,10 +101,7 @@ elif DEBUG and (DATABASE == 2):
             'NAME': 'django-blog',
             # set your user details
             'USER': 'postgres',
-<<<<<<< HEAD
             'PASSWORD': '(K)odina0506',
-=======
->>>>>>> 6d3452dc4c7368e38190b111630d79399caf5e12
             'HOST': 'localhost',
             'POST': '5432'
         }
