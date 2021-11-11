@@ -77,32 +77,12 @@ WSGI_APPLICATION = "myblog.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# Database Choice,
-# Set DATABASE = 1 for SQLite
-# Set DATABASE = 2 for MySQL
-
-DATABASE = 2
-
-if DEBUG and (DATABASE == 1):
-    # Use SQLite Database
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
-
-elif DEBUG and (DATABASE == 2):
-    # Use Pythonanywhere's integrated MySQL Database
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.mysql",
-            "NAME": "tenaciouscri$blog",
-            "USER": "tenaciouscri",
-            "PASSWORD": "mysqlroot",
-            "HOST": "tenaciouscri.mysql.pythonanywhere-services.com",
-        }
-    }
+}
 
 
 # Password validation
