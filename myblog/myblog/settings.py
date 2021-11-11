@@ -79,10 +79,9 @@ WSGI_APPLICATION = "myblog.wsgi.application"
 
 # Database Choice,
 # Set DATABASE = 1 for SQLite
-# Set DATABASE = 2 for Postgres
-# pip install psycopg2 to use postgres in Django
+# Set DATABASE = 2 for MySQL
 
-DATABASE = 3
+DATABASE = 2
 
 if DEBUG and (DATABASE == 1):
     # Use SQLite Database
@@ -93,22 +92,7 @@ if DEBUG and (DATABASE == 1):
         }
     }
 
-# elif DEBUG and (DATABASE == 2):
-#     # Use Local Postgres Database
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             # set database name
-#             'NAME': 'django-blog',
-#             # set your user details
-#             'USER': 'postgres',
-#             'PASSWORD': '',
-#             'HOST': 'localhost',
-#             'POST': '5432'
-#         }
-#     }
-
-elif DEBUG and (DATABASE == 3):
+elif DEBUG and (DATABASE == 2):
     # Use Pythonanywhere's integrated MySQL Database
     DATABASES = {
         "default": {
@@ -117,16 +101,6 @@ elif DEBUG and (DATABASE == 3):
             "USER": "tenaciouscri",
             "PASSWORD": "mysqlroot",
             "HOST": "tenaciouscri.mysql.pythonanywhere-services.com",
-        }
-    }
-
-else:
-    # Use Production Dtabase e.g Postgres
-    # Using SQLite Database for demonstration
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
 
@@ -170,14 +144,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = "/home/tenaciouscri/django-blog/myblog/blog/static/"
 
-# Allowing to create a file called local_settings.py on the server
-# that holds secret information that should only be on the server
-# and should not be on GitHub
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -188,3 +154,13 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
+
+
+# Allowing to create a file called local_settings.py on the server
+# that holds secret information that should only be on the server
+# and should not be on GitHub
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
