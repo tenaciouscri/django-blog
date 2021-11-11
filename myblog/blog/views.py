@@ -10,6 +10,7 @@ from .models import Post
 
 # MY OWN DEF
 
+
 def home(request):
     blog_posts = Blog.objects.all()
     posts = Post.objects.all()
@@ -28,7 +29,9 @@ def post(request, id=1):
     context = {"post": post}
     return render(request, "blog/post.html", context)
 
+
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE
+
 
 @csrf_exempt
 def update(request):

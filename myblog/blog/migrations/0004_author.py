@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0003_auto_20211028_0915'),
+        ("blog", "0003_auto_20211028_0915"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='blog',
-            name='author',
-            field=models.CharField(default='Admin', max_length=150),
+            model_name="blog",
+            name="author",
+            field=models.CharField(default="Admin", max_length=150),
         ),
         migrations.AddField(
-            model_name='post',
-            name='author',
-            field=models.CharField(default='Admin', max_length=150),
+            model_name="post",
+            name="author",
+            field=models.CharField(default="Admin", max_length=150),
         ),
     ]

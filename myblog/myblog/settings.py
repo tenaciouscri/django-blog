@@ -26,31 +26,31 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "home/tenaciouscri/static",
     "tenaciouscri.pythonanywhere.com",
-    "127.0.0.1"
+    "127.0.0.1",
 ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-    'django_summernote',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "blog",
+    "django_summernote",
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
 ROOT_URLCONF = "myblog.urls"
@@ -77,9 +77,9 @@ WSGI_APPLICATION = "myblog.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# Database Choice, 
-# Set DATABASE = 1 for SQLite 
-# Set DATABASE = 2 for Postgres 
+# Database Choice,
+# Set DATABASE = 1 for SQLite
+# Set DATABASE = 2 for Postgres
 # pip install psycopg2 to use postgres in Django
 
 DATABASE = 3
@@ -87,12 +87,12 @@ DATABASE = 3
 if DEBUG and (DATABASE == 1):
     # Use SQLite Database
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
-    
+
 # elif DEBUG and (DATABASE == 2):
 #     # Use Local Postgres Database
 #     DATABASES = {
@@ -107,26 +107,26 @@ if DEBUG and (DATABASE == 1):
 #             'POST': '5432'
 #         }
 #     }
-    
+
 elif DEBUG and (DATABASE == 3):
     # Use Pythonanywhere's integrated MySQL Database
-        DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'tenaciouscri$blog',
-            'USER': 'tenaciouscri',
-            'PASSWORD': 'mysqlroot',
-            'HOST': 'tenaciouscri.mysql.pythonanywhere-services.com'
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "tenaciouscri$blog",
+            "USER": "tenaciouscri",
+            "PASSWORD": "mysqlroot",
+            "HOST": "tenaciouscri.mysql.pythonanywhere-services.com",
         }
     }
-    
+
 else:
     # Use Production Dtabase e.g Postgres
     # Using SQLite Database for demonstration
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
 
@@ -182,9 +182,9 @@ except ImportError:
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-MEDIA_URL='/media/'
-MEDIA_ROOT= os.path.join(BASE_DIR,'media/')
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = "SAMEORIGIN"

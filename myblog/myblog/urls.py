@@ -15,19 +15,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
-from blog import  views
+from blog import views
 from django.conf.urls.static import static
 from django.conf import settings
 from blog import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('blog/<int:id>/', views.blog_post, name="blog_post"),
+    path("", views.home, name="home"),
+    path("blog/<int:id>/", views.blog_post, name="blog_post"),
     # path('post/<int:id>/', views.post, name="post"),
-    path('admin/', admin.site.urls),
-    path('summernote/', include('django_summernote.urls')),
-    path('update_server/', views.update, name="update")
+    path("admin/", admin.site.urls),
+    path("summernote/", include("django_summernote.urls")),
+    path("update_server/", views.update, name="update"),
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)#sets static files and the media root
+    urlpatterns += static(
+        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
+    )  # sets static files and the media root
