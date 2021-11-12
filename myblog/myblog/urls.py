@@ -22,7 +22,8 @@ from blog import views
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("blog/<int:id>/", views.blog_post, name="blog_post"),
+    path('blog/<int:pk>/', views.blog_post, name='blog_post'),
+    # path("blog/<int:id>/", views.blog_post, name="blog_post"),
     # path('post/<int:id>/', views.post, name="post"),
     path("admin/", admin.site.urls),
     path("summernote/", include("django_summernote.urls")),

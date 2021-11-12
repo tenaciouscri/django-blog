@@ -1,7 +1,7 @@
 import git
 from django.views.decorators.csrf import csrf_exempt
 
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 
 from .models import Blog
@@ -18,10 +18,12 @@ def home(request):
     return render(request, "blog/home.html", context)
 
 
-def blog_post(request, id=1):
-    blog = Blog.objects.get(id=id)
-    context = {"blog": blog}
-    return render(request, "blog/blog_post.html", context)
+def blog_post(request, pk):
+    blog = get_object_or_404(Blog, pk=pk)
+    return render(request, 'blog/blog_post.html', {'blog': blog})
+    # blog = Blog.objects.get(id=id)
+    # context = {"blog": blog}
+    # return render(request, "blog/blog_post.html", context)
 
 
 def post(request, id=1):

@@ -1,12 +1,12 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/base.html'%}
 
-{% block content%}
+{% block content %}
     {% for blog in blog_posts %}
         <article class="post">
             <time class="date">
                 {{ blog.date }}
             </time>
-            <h2><a href= "/blog/{{blog.id}}/">{{ blog.title }}</a></h2>
+            <h2><a href="{% url 'blog_post' pk=blog.pk %}">{{ blog.title }}</a></h2>
             <p>By {{ blog.author }}</p>
             <p>{{ blog.body |safe |linebreaksbr }}</p>
         </article>
