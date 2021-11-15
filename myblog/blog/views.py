@@ -8,7 +8,6 @@ from django.utils import timezone
 from django.shortcuts import redirect
 
 from .models import Blog
-from .models import Post
 
 from .forms import PostForm
 
@@ -18,8 +17,7 @@ from .forms import PostForm
 
 def home(request):
     blog_posts = Blog.objects.all()
-    posts = Post.objects.all()
-    context = {"blog_posts": blog_posts, "posts": posts}
+    context = {"blog_posts": blog_posts}
     return render(request, "blog/home.html", context)
 
 
@@ -43,14 +41,22 @@ def post_new(request):
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 
+def post_edit(request, pk):
+    post = get_object_or_404(Blog, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            # post.author = request.user
+            post.date = timezone.now()
+            post.save()
+            return redirect('blog_post', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
 
-def post(request, id=1):
-    post = Post.objects.get(id=id)
-    context = {"post": post}
-    return render(request, "blog/post.html", context)
 
-
-# DEF FOR AUTO PULL FROM PYTHONANYWHERE
+# DEF FOR AUTO PULL FROM GIT TO PYTHONANYWHERE
 
 
 @csrf_exempt

@@ -2,9 +2,12 @@
 
 {% block content %}
     <article class="post">
-        <time class="date">
-            {{ blog.date }}
-        </time>
+        <aside class="actions">
+            <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        </aside>
+        <time class="date">published: {{ blog.published_date }}</time>
         <h2>{{blog.title}}</h2>
         <p>{{ blog.body |safe |linebreaksbr }}</p>
         <p>Author: {{blog.author}}</p>
