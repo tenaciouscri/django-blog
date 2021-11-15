@@ -18,11 +18,11 @@ from django.urls import include
 from blog import views
 from django.conf.urls.static import static
 from django.conf import settings
-from blog import views
 
 urlpatterns = [
     path("", views.home, name="home"),
     path('blog/<int:pk>/', views.blog_post, name='blog_post'),
+    path('blog/new/', views.post_new, name='post_new'),
     # path("blog/<int:id>/", views.blog_post, name="blog_post"),
     # path('post/<int:id>/', views.post, name="post"),
     path("admin/", admin.site.urls),

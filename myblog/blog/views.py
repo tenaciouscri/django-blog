@@ -4,8 +4,13 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 
+from django.utils import timezone
+from django.shortcuts import redirect
+
 from .models import Blog
 from .models import Post
+
+from .forms import PostForm
 
 
 # MY OWN DEF
@@ -24,6 +29,19 @@ def blog_post(request, pk):
     # blog = Blog.objects.get(id=id)
     # context = {"blog": blog}
     # return render(request, "blog/blog_post.html", context)
+
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit = False)
+            post.author = request.user
+            post.date = timezone.now()
+            post.save()
+            return redirect('blog_post', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 
 
 def post(request, id=1):
