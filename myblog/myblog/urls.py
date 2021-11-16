@@ -23,6 +23,7 @@ urlpatterns = [
     path("", views.home, name="home"),
     path('blog/<int:pk>/', views.blog_post, name='blog_post'),
     path('blog/new/', views.post_new, name='post_new'),
+    path('blog/<int:pk>/edit/', views.post_edit, name='post_edit'),
     # path("blog/<int:id>/", views.blog_post, name="blog_post"),
     # path('post/<int:id>/', views.post, name="post"),
     path("admin/", admin.site.urls),

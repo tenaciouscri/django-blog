@@ -43,6 +43,19 @@ def post_new(request):
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 
+def post_edit(request, pk):
+    post = get_object_or_404(Blog, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            # post.author = request.user
+            post.date = timezone.now()
+            post.save()
+            return redirect('blog_post', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})
 
 def post(request, id=1):
     post = Post.objects.get(id=id)
