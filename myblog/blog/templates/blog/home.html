@@ -3,11 +3,8 @@
 {% block content %}
     {% for blog in blog_posts %}
         <article class="post">
-            <time class="date">
-                {{ blog.date }}
-            </time>
+            <time class="date">{{ blog.published_date }}</time>
             <h2><a href="{% url 'blog_post' pk=blog.pk %}">{{ blog.title }}</a></h2>
-            <p>By {{ blog.author }}</p>
             <p>{{ blog.body |safe |linebreaksbr }}</p>
         </article>
     {% endfor %}

@@ -7,7 +7,7 @@
                 {% include './icons/pencil-fill.svg' %}
             </a>
         </aside>
-        <time class="date">{{ blog.date }}</time>
+        <time class="date">published: {{ blog.published_date }}</time>
         <h2>{{blog.title}}</h2>
         <p>{{ blog.body |safe |linebreaksbr }}</p>
         <p>Author: {{blog.author}}</p>
