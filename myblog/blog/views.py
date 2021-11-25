@@ -10,7 +10,7 @@ from django.shortcuts import redirect
 
 from .models import Blog
 
-from .forms import PostForm
+from .forms import CommentForm, PostForm
 
 from django.contrib.auth.decorators import login_required
 
@@ -28,6 +28,19 @@ def blog_post(request, pk):
     # blog = Blog.objects.get(id=id)
     # context = {"blog": blog}
     # return render(request, "blog/blog_post.html", context)
+
+def add_comment(request, pk):
+    blog = get_object_or_404(Blog, pk=pk)
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.blog = blog
+            comment.save()
+            return redirect('blog_post', pk=blog.pk)
+    else:
+        form = CommentForm()
+    return render(request, 'blog/add_comment.html', {'form': form})
 
 @login_required
 def post_new(request):
@@ -72,6 +85,7 @@ def post_remove(request, pk):
     blog_post = get_object_or_404(Blog, pk=pk)
     blog_post.delete()
     return redirect("home")
+
 
 
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE

@@ -20,6 +20,18 @@
         <h2>{{ blog.title }}</h2>
         <p>{{ blog.body |safe |linebreaksbr }}</p>
         <p>Author: {{ blog.author }}</p>
+        <hr>
+        <a class="btn btn-default" href="{% url 'add_comment' pk=blog.pk %}">Add comment</a>
+        <br><br>
+        {% for comment in blog.comments.all %}
+            <div class="comment">
+                <div class="date">{{ comment.created_date }}</div>
+                <strong>{{ comment.author }}</strong>
+                <p>{{ comment.body |safe |linebreaksbr }}</p>
+            </div>
+        {% empty %}
+            <p>No one has commented yet. Be the first!</p>
+        {% endfor %}
         <br>
         <a href="{% url 'home' %}">Back</a>
     </article>
