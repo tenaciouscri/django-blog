@@ -17,6 +17,8 @@ urlpatterns = [
     path('blog/<pk>/publish/', views.post_publish, name="post_publish"),
     path('blog/<pk>/remove/', views.post_remove, name="post_remove"),
     path('blog/<int:pk>/comment/', views.add_comment, name="add_comment"),
+    path('comment/<int:pk>/approve/', views.comment_approve, name="comment_approve"),
+    path('comment/<int:pk>/remove/', views.comment_remove, name="comment_remove"),
     path("summernote/", include("django_summernote.urls")),
     path("update_server/", views.update, name="update"),
 ]

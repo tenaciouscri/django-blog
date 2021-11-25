@@ -24,13 +24,21 @@
         <a class="btn btn-default" href="{% url 'add_comment' pk=blog.pk %}">Add comment</a>
         <br><br>
         {% for comment in blog.comments.all %}
+            {% if user.is_authenticated or comment.approved_comment %}
             <div class="comment">
-                <div class="date">{{ comment.created_date }}</div>
+                <div class="date">
+                    {{ comment.created_date }}
+                    {% if not comment.approved_comment %}
+                        <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}">Delete<span class="glyphicon glyphicon-remove"></span></a>
+                        <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}">Approve<span class="glyphicon glyphicon-ok"></span></a>
+                    {% endif %}
+                </div>
                 <strong>{{ comment.author }}</strong>
-                <p>{{ comment.body |safe |linebreaksbr }}</p>
+                <p>{{ comment.body |safe |linebreaks }}</p>
             </div>
+            {% endif %}
         {% empty %}
-            <p>No one has commented yet. Be the first!</p>
+            <p>No one commented yet. Be the first!</p>
         {% endfor %}
         <br>
         <a href="{% url 'home' %}">Back</a>

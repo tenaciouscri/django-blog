@@ -8,7 +8,7 @@ from django.http import HttpResponse
 from django.utils import timezone
 from django.shortcuts import redirect
 
-from .models import Blog
+from .models import Blog, Comment
 
 from .forms import CommentForm, PostForm
 
@@ -86,7 +86,17 @@ def post_remove(request, pk):
     blog_post.delete()
     return redirect("home")
 
+@login_required
+def comment_approve(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
+    comment.approve()
+    return redirect('blog_post', pk=comment.blog.pk)
 
+@login_required
+def comment_remove(request, pk):
+    comment = get_object_or_404(Comment, pk=pk)
+    comment.delete()
+    return redirect('blog_post', pk=comment.blog.pk)
 
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE
 
