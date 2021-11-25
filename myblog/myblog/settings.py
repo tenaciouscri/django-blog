@@ -29,6 +29,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
+# LOGIN
+
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 

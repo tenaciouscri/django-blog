@@ -1,3 +1,4 @@
+from django.contrib.auth import login
 import git
 from django.views.decorators.csrf import csrf_exempt
 
@@ -11,6 +12,8 @@ from .models import Blog
 
 from .forms import PostForm
 
+from django.contrib.auth.decorators import login_required
+
 
 # MY OWN DEF
 
@@ -19,7 +22,6 @@ def home(request):
     blog_posts = Blog.objects.filter(published_date__lte=timezone.now()).order_by("-published_date")
     return render(request, "blog/home.html", {"blog_posts": blog_posts})
 
-
 def blog_post(request, pk):
     blog = get_object_or_404(Blog, pk=pk)
     return render(request, 'blog/blog_post.html', {'blog': blog})
@@ -27,6 +29,7 @@ def blog_post(request, pk):
     # context = {"blog": blog}
     # return render(request, "blog/blog_post.html", context)
 
+@login_required
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -39,6 +42,7 @@ def post_new(request):
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
 
+@login_required
 def post_edit(request, pk):
     post = get_object_or_404(Blog, pk=pk)
     if request.method == "POST":
@@ -52,15 +56,18 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
+@login_required
 def post_draft_list(request):
     blog_posts = Blog.objects.filter(published_date__isnull=True).order_by('-created_date')
     return render(request, 'blog/post_draft_list.html', {'blog_posts': blog_posts})
 
+@login_required
 def post_publish(request, pk):
     blog_post = get_object_or_404(Blog, pk=pk)
     blog_post.publish()
     return redirect("blog_post", pk=pk)
 
+@login_required
 def post_remove(request, pk):
     blog_post = get_object_or_404(Blog, pk=pk)
     blog_post.delete()
