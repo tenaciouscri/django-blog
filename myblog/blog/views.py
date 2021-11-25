@@ -16,9 +16,8 @@ from .forms import PostForm
 
 
 def home(request):
-    blog_posts = Blog.objects.all()
-    context = {"blog_posts": blog_posts}
-    return render(request, "blog/home.html", context)
+    blog_posts = Blog.objects.filter(published_date__lte=timezone.now()).order_by("-published_date")
+    return render(request, "blog/home.html", {"blog_posts": blog_posts})
 
 
 def blog_post(request, pk):
@@ -54,8 +53,8 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def post_draft_list(request):
-    posts = Blog.objects.filter(published_date__isnull=True).order_by('created_date')
-    return render(request, 'blog/post_draft_list.html', {'posts': posts})
+    blog_posts = Blog.objects.filter(published_date__isnull=True).order_by('-created_date')
+    return render(request, 'blog/post_draft_list.html', {'blog_posts': blog_posts})
 
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE
 
