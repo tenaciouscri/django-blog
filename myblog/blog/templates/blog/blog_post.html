@@ -3,9 +3,6 @@
 {% block content %}
     <article class="post">
         <aside class="actions">
-            <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
-                {% include './icons/pencil-fill.svg' %}
-            </a>
         {% if blog.published_date %}
             <div class="date">
                 {{ blog.published_date }}
@@ -13,6 +10,12 @@
         {% else %}
             <a class="btn btn-default" href="{% url 'post_publish' pk=blog.pk %}">Publish</a>
         {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
+            {% include './icons/pencil-fill.svg' %}
+        </a>
+        <a class="btn btn-default" href="{% url 'post_remove' pk=blog.pk %}">
+            {% include './icons/icons8-trash.svg' %}
+        </a>
         </aside>
         <h2>{{ blog.title }}</h2>
         <p>{{ blog.body |safe |linebreaksbr }}</p>

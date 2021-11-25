@@ -61,6 +61,11 @@ def post_publish(request, pk):
     blog_post.publish()
     return redirect("blog_post", pk=pk)
 
+def post_remove(request, pk):
+    blog_post = get_object_or_404(Blog, pk=pk)
+    blog_post.delete()
+    return redirect("home")
+
 
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE
 
