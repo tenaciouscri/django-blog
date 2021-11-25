@@ -3,16 +3,20 @@
 {% block content %}
     <article class="post">
         <aside class="actions">
-            {% if user.is_authenticated %}
-                <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
-                    {% include './icons/pencil-fill.svg' %}
-                </a>
-            {% endif %}
+            <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
+                {% include './icons/pencil-fill.svg' %}
+            </a>
+        {% if blog.published_date %}
+            <div class="date">
+                {{ blog.published_date }}
+            </div>
+        {% else %}
+            <a class="btn btn-default" href="{% url 'post_publish' pk=blog.pk %}">Publish</a>
+        {% endif %}
         </aside>
-        <time class="date">published: {{ blog.published_date }}</time>
-        <h2>{{blog.title}}</h2>
+        <h2>{{ blog.title }}</h2>
         <p>{{ blog.body |safe |linebreaksbr }}</p>
-        <p>Author: {{blog.author}}</p>
+        <p>Author: {{ blog.author }}</p>
         <br>
         <a href="{% url 'home' %}">Back</a>
     </article>

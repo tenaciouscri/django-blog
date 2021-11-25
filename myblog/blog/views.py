@@ -56,8 +56,13 @@ def post_draft_list(request):
     blog_posts = Blog.objects.filter(published_date__isnull=True).order_by('-created_date')
     return render(request, 'blog/post_draft_list.html', {'blog_posts': blog_posts})
 
-# DEF FOR AUTO PULL FROM PYTHONANYWHERE
+def post_publish(request, pk):
+    blog_post = get_object_or_404(Blog, pk=pk)
+    blog_post.publish()
+    return redirect("blog_post", pk=pk)
 
+
+# DEF FOR AUTO PULL FROM PYTHONANYWHERE
 
 @csrf_exempt
 def update(request):
