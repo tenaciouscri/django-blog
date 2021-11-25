@@ -3,9 +3,11 @@
 {% block content %}
     <article class="post">
         <aside class="actions">
-            <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
-                {% include './icons/pencil-fill.svg' %}
-            </a>
+            {% if user.is_authenticated %}
+                <a class="btn btn-default" href="{% url 'post_edit' pk=blog.pk %}">
+                    {% include './icons/pencil-fill.svg' %}
+                </a>
+            {% endif %}
         </aside>
         <time class="date">published: {{ blog.published_date }}</time>
         <h2>{{blog.title}}</h2>
