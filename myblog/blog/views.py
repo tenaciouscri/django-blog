@@ -34,7 +34,6 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit = False)
             post.author = request.user
-            post.date = timezone.now()
             post.save()
             return redirect('blog_post', pk=post.pk)
     else:
@@ -47,14 +46,16 @@ def post_edit(request, pk):
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
-            # post.author = request.user
-            post.date = timezone.now()
+            post.author = request.user
             post.save()
             return redirect('blog_post', pk=post.pk)
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
+def post_draft_list(request):
+    posts = Blog.objects.filter(published_date__isnull=True).order_by('created_date')
+    return render(request, 'blog/post_draft_list.html', {'posts': posts})
 
 # DEF FOR AUTO PULL FROM PYTHONANYWHERE
 
