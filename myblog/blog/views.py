@@ -25,9 +25,6 @@ def home(request):
 def blog_post(request, pk):
     blog = get_object_or_404(Blog, pk=pk)
     return render(request, 'blog/blog_post.html', {'blog': blog})
-    # blog = Blog.objects.get(id=id)
-    # context = {"blog": blog}
-    # return render(request, "blog/blog_post.html", context)
 
 def add_comment(request, pk):
     blog = get_object_or_404(Blog, pk=pk)

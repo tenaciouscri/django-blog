@@ -12,7 +12,6 @@ class Blog(models.Model):
     body = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    # author = models.CharField(max_length=150, default="Admin")
     
     def publish(self):
         self.published_date = timezone.now()
