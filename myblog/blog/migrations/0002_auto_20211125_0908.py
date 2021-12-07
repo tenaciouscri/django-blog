@@ -10,31 +10,35 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('blog', '0001_initial'),
+        ("blog", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='blog',
-            options={'ordering': ['-published_date']},
+            name="blog",
+            options={"ordering": ["-published_date"]},
         ),
         migrations.RemoveField(
-            model_name='blog',
-            name='date',
+            model_name="blog",
+            name="date",
         ),
         migrations.AddField(
-            model_name='blog',
-            name='author',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),
+            model_name="blog",
+            name="author",
+            field=models.ForeignKey(
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='blog',
-            name='created_date',
+            model_name="blog",
+            name="created_date",
             field=models.DateTimeField(default=django.utils.timezone.now),
         ),
         migrations.AddField(
-            model_name='blog',
-            name='published_date',
+            model_name="blog",
+            name="published_date",
             field=models.DateTimeField(blank=True, null=True),
         ),
     ]

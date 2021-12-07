@@ -31,7 +31,7 @@ ALLOWED_HOSTS = [
 
 # LOGIN
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = "/"
 
 # Application definition
 
