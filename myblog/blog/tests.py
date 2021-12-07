@@ -56,7 +56,7 @@ class SimpleTest(TestCase):
         self.assertEqual(response.status_code, 302)
         response = self.client.get(f"/blog/{blog_post.id}/")
         self.assertTrue("Some comment" in str(response.content))
-    
+
     def test_unapproved_comment(self):
         blog_post = Blog.objects.create(
             author=self.user, title="The title", body="The body"
