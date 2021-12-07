@@ -23,3 +23,13 @@ class SimpleTest(TestCase):
         self.assertEqual(response.status_code, 302)
         response = self.client.get("/")
         self.assertTrue("Some title" in str(response.content))
+    
+    def test_add_comment(self):
+        self.client.login(username="testuser", password="password")
+        response = self.client.post(
+            "/admin/blog/comment/add/", {"blog": "8", "author": "Some author", "body": "Some comment", "created_date_0": "2021-12-07", "created_date_1": "12:07:46", "initial-created_date_0": "2021-12-07", "initial-created_date_1": "12:07:46", "approved_comment": "on", "_save": "Save"}
+        )
+        print(response.content)
+        self.assertEqual(response.status_code, 302)
+        response = self.client.get("/blog/8/")
+        self.assertTrue("Some title" in str(response.content))
