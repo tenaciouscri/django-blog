@@ -54,6 +54,5 @@ class SimpleTest(TestCase):
             },
         )
         self.assertEqual(response.status_code, 302)
-        response = self.client.get("/blog/blog_post.id/")
-        print(response.content)
+        response = self.client.get(f"/blog/{blog_post.id}/")
         self.assertTrue("Some comment" in str(response.content))
