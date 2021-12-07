@@ -42,7 +42,7 @@ class SimpleTest(TestCase):
         response = self.client.post(
             "/admin/blog/comment/add/",
             {
-                "blog": "blog_post.id",
+                "blog": blog_post.id,
                 "author": "Some author",
                 "body": "Some comment",
                 "created_date_0": "2021-12-07",
@@ -55,4 +55,5 @@ class SimpleTest(TestCase):
         )
         self.assertEqual(response.status_code, 302)
         response = self.client.get("/blog/blog_post.id/")
-        self.assertTrue("Some title" in str(response.content))
+        print(response.content)
+        self.assertTrue("Some comment" in str(response.content))
