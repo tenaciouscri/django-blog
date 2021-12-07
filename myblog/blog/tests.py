@@ -1,6 +1,9 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
 
+from django.db import models
+from django.utils import timezone
+
 
 class SimpleTest(TestCase):
     
@@ -15,9 +18,8 @@ class SimpleTest(TestCase):
     def test_add_blog_post(self):
         self.client.login(username="testuser", password="password")
         response = self.client.post(
-            "/admin/blog/blog/add/", {"title": "TEST TITLE", "body": "TEST BODY"}
+            "/admin/blog/blog/add/", {"author": "1", "title": "Some title", "body": "<p>Some body</p>", "created_date_0": "2021-12-07", "created_date_1": "09:57:39", "initial-created_date_0": "2021-12-07", "initial-created_date_1": "09:57:39", "published_date_0": "2021-12-07", "published_date_1": "09:59:01", "_save": "Save"}
         )
-        print(response.content)
         self.assertEqual(response.status_code, 302)
         response = self.client.get("/")
-        self.assertTrue("TEST TITLE" in str(response.content))
+        self.assertTrue("Some title" in str(response.content))
