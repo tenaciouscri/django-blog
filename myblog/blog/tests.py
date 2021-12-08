@@ -79,6 +79,3 @@ class SimpleTest(TestCase):
         self.assertEqual(response.status_code, 302)
         response = self.client.get(f"/blog/{blog_post.id}")
         self.assertFalse("Bad comment" in str(response.content))
-
-    def test_hidden_icons(self):
-        pass
