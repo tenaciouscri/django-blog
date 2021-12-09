@@ -1,4 +1,3 @@
-from django.contrib.auth import login
 import git
 from django.views.decorators.csrf import csrf_exempt
 
