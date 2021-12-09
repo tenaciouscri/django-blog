@@ -145,6 +145,6 @@ X_FRAME_OPTIONS = "SAMEORIGIN"
 # and should not be on GitHub
 
 try:
-    from local_settings import *
+    from local_settings import *  # noqa
 except ImportError:
     pass
