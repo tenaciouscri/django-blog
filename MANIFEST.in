@@ -1,0 +1,3 @@
+recursive-include myblog *
+exclude **/*.pyc
+exclude **/*.sqlite3
