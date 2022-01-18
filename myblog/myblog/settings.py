@@ -17,6 +17,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = "django-insecure-2d8b9+v!a#$+#1o%&ip4t#euv_-g8kjluvla!-hnyu5_6kcd9e"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "blog",
+    # "blog",
     "django_summernote",
     "blog.apps.BlogConfig",
 ]
