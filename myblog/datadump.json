@@ -1,1 +1,921 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2021-10-19T08:13:56.603Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Blog object (1)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2021-10-19T08:14:05.549Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Blog object (1)", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2021-10-19T08:14:34.836Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Blog object (1)", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2021-10-20T08:04:58.366Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "This is just a title <b>THIS IS A HACK </b>", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2021-10-20T08:05:25.105Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "This is just a title <b>THIS IS A HACK</b>", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2021-10-28T09:20:12.515Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "testestest", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2021-10-28T09:33:13.645Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "The Leap", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2021-10-28T09:34:30.161Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "The Leap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2021-10-28T09:47:10.915Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "The Leap", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2021-10-28T09:54:03.350Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "testuploadpic", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2021-10-28T13:29:23.409Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "This is just a title <b>THIS IS A HACK</b>", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2021-10-28T13:35:06.502Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "The Leap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2021-10-28T13:53:53.108Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "The Leap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2021-10-28T14:03:22.934Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "This is just a title <b>THIS IS A HACK</b>", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2021-10-28T14:03:51.280Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "The Leap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2021-10-28T14:04:03.472Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "The Leap", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2021-10-28T14:26:42.788Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "More posts!", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2021-10-28T14:27:48.040Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "New photo, who dis?", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2021-10-28T14:28:36.951Z", "user": 1, "content_type": 7, "object_id": "6", "object_repr": "Guess what? More Lorem!", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2021-10-28T14:29:19.363Z", "user": 1, "content_type": 7, "object_id": "7", "object_repr": "Update", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2021-10-28T14:30:36.268Z", "user": 1, "content_type": 7, "object_id": "8", "object_repr": "Yet another update", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2021-10-28T14:32:32.961Z", "user": 1, "content_type": 7, "object_id": "9", "object_repr": "Brighton", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2021-10-28T14:34:14.744Z", "user": 1, "content_type": 7, "object_id": "10", "object_repr": "10th post!", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2021-10-28T14:36:29.735Z", "user": 1, "content_type": 7, "object_id": "11", "object_repr": "It's done", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add blog", "content_type": 7, "codename": "add_blog"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change blog", "content_type": 7, "codename": "change_blog"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete blog", "content_type": 7, "codename": "delete_blog"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view blog", "content_type": 7, "codename": "view_blog"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add attachment", "content_type": 8, "codename": "add_attachment"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change attachment", "content_type": 8, "codename": "change_attachment"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete attachment", "content_type": 8, "codename": "delete_attachment"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view attachment", "content_type": 8, "codename": "view_attachment"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add post", "content_type": 9, "codename": "add_post"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change post", "content_type": 9, "codename": "change_post"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete post", "content_type": 9, "codename": "delete_post"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view post", "content_type": 9, "codename": "view_post"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$260000$lrxWJpKx9RkPIWi91dDw4h$Hm0q5Z5N8+5k4+VlpQbdVakl5p5qcU0dbzweB1ceiJQ=", "last_login": "2021-10-28T08:27:31.566Z", "is_superuser": true, "username": "cridelve", "first_name": "", "last_name": "", "email": "cridelve@gmail.com", "is_staff": true, "is_active": true, "date_joined": "2021-10-19T08:05:13.667Z", "groups": [], "user_permissions": []}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "blog", "model": "blog"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "django_summernote", "model": "attachment"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "blog", "model": "post"}}, {"model": "sessions.session", "pk": "ok8tlv0kawfh055mqfe6unkowcq4vewi", "fields": {"session_data": ".eJxVjEEOwiAQRe_C2pDClAFcuvcMZGCoVA0kpV0Z765NutDtf-_9lwi0rSVsPS9hZnEWSpx-t0jpkesO-E711mRqdV3mKHdFHrTLa-P8vBzu30GhXr410OCsd9EZiBonHqyJHjOiIQ2gEdgmp5mSykqbhNZN1o1RexgJQKF4fwDANTa_:1mck7y:YJ0kQPm0IN9N1DKiXXmdjrDF5wRTG8KI3sPGxOsAvDI", "expire_date": "2021-11-02T08:05:42.895Z"}}, {"model": "sessions.session", "pk": "vnufx3ii5gn75wiyytefq015jw0tt3w4", "fields": {"session_data": ".eJxVjEEOwiAQRe_C2pDClAFcuvcMZGCoVA0kpV0Z765NutDtf-_9lwi0rSVsPS9hZnEWSpx-t0jpkesO-E711mRqdV3mKHdFHrTLa-P8vBzu30GhXr410OCsd9EZiBonHqyJHjOiIQ2gEdgmp5mSykqbhNZN1o1RexgJQKF4fwDANTa_:1mg0l1:0bjItVmlqwQsn6j9wpxiW10dotmJ2pWoyv3lUYQgmo0", "expire_date": "2021-11-11T08:27:31.569Z"}}, {"model": "blog.blog", "pk": 1, "fields": {"title": "My first blog post", "body": "This is my first blog post!", "date": "2021-10-19T08:14:34.835Z", "author": "Admin"}}, {"model": "blog.blog", "pk": 2, "fields": {"title": "This is just a title <b>THIS IS A HACK</b>", "body": "<p>The main blog post <i>This is a hack</i></p><hr><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>", "date": "2021-10-28T14:03:22.933Z", "author": "Admin"}}, {"model": "blog.blog", "pk": 3, "fields": {"title": "The Leap", "body": "<p style=\"text-align: center;\"><span style=\"font-size: 18px; font-family: &quot;Helvetica Neue&quot;;\"><i>The Leap</i></span></p><p style=\"text-align: center;\"><span style=\"font-size: 18px;\"><i>---</i></span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Sardinia, September 2020</span></p><p style=\"text-align: center;\"><span style=\"font-size: 11px;\">Shot on Mavic 2 Zoom</span></p><p style=\"text-align: center;\"><img src=\"/media/django-summernote/2021-10-28/7dfb9ceb-a06b-4aaa-ba8c-661357d95780.jpg\" style=\"width: 698px;\"><br></p><p style=\"text-align: center;\">Like what you see? Come back for new drone pics!</p>", "date": "2021-10-28T14:04:03.471Z", "author": "Yours truly"}}, {"model": "blog.blog", "pk": 4, "fields": {"title": "More posts!", "body": "<p>We're currently working on showing a maximum of 10 posts per page. Still need to figure out how to do that, though! In the meantime, enjoy some more Lorem Ipsum text!</p><hr><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>", "date": "2021-10-28T14:26:42.787Z", "author": "Admin"}}, {"model": "blog.blog", "pk": 5, "fields": {"title": "New photo, who dis?", "body": "<p>Here's another drone shot I took in Sardinia :) Enjoy!</p><p><br></p><p><img src=\"/media/django-summernote/2021-10-28/d2f7cf9e-f6b2-474c-ac99-4585c5705033.jpeg\" style=\"width: 698px;\"><br></p>", "date": "2021-10-28T14:27:48.039Z", "author": "Your friendly neighbourhood droner"}}, {"model": "blog.blog", "pk": 6, "fields": {"title": "Guess what? More Lorem!", "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>", "date": "2021-10-28T14:28:36.950Z", "author": "An ancient guy"}}, {"model": "blog.blog", "pk": 7, "fields": {"title": "Update", "body": "<p>I know these posts are getting tiresome, but we really need to get to more than 10 posts! Bear with us.</p>", "date": "2021-10-28T14:29:19.362Z", "author": "A frustrated dev"}}, {"model": "blog.blog", "pk": 8, "fields": {"title": "Yet another update", "body": "<p>#RoadTo10+Posts</p>", "date": "2021-10-28T14:30:36.267Z", "author": "Admin"}}, {"model": "blog.blog", "pk": 9, "fields": {"title": "Brighton", "body": "<p>Shot a few weeks ago in Brighton. What do you think?</p><p>#RoadTo10+Posts</p><p><img src=\"/media/django-summernote/2021-10-28/31b697f1-6abb-4d2d-9a17-be67012ec7ca.jpg\" style=\"width: 698px;\"><br></p>", "date": "2021-10-28T14:32:32.960Z", "author": "A random photographer"}}, {"model": "blog.blog", "pk": 10, "fields": {"title": "10th post!", "body": "I can't believe I'm writing this, but this is officially the 10th post! Only one more and we'll finally be able to start working on the 'next page' feature.", "date": "2021-10-28T14:34:14.743Z", "author": "A baffled coder"}}, {"model": "blog.blog", "pk": 11, "fields": {"title": "It's done", "body": "<p>My job is done, 11th post it is. In the meantime, I'm also checking whether gifs are supported on django-summernote.</p><p><br></p><p><img src=\"https://media.giphy.com/media/5Ivz8uxHriaAw/giphy.gif\" style=\"width: 480px;\"></p><p><br></p><p>P.S.: Looks like it!</p>", "date": "2021-10-28T14:36:29.734Z", "author": "Admin"}}, {"model": "blog.post", "pk": 1, "fields": {"title": "testestest", "body": "<p><img src=\"https://cdn.vidaativa.pt/uploads/2018/03/welsh-corgi-cardigan-cao.jpg\" style=\"width: 698px;\"><br></p>", "date": "2021-10-28T09:20:12.513Z", "content": "<p><img src=\"https://cdn.vidaativa.pt/uploads/2018/03/welsh-corgi-cardigan-cao.jpg\" style=\"width: 698px;\"><br></p>", "author": "Admin"}}, {"model": "blog.post", "pk": 2, "fields": {"title": "testuploadpic", "body": "<p style=\"text-align: center;\"><i><span style=\"font-size: 18px;\">The Leap</span></i></p><p style=\"text-align: center;\"><i><span style=\"font-size: 18px;\">---</span></i></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">﻿Sardinia, September 2020</span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Shot on Mavic 2 Zoom</span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\"><br></span></p><p><div style=\"text-align: center;\"><img src=\"/media/django-summernote/2021-10-28/8dd5e547-9fc1-4bfc-b542-af048540b1f8.jpg\" style=\"width: 698px;\"></div><i><span style=\"font-size: 18px;\"><br></span></i></p>", "date": "2021-10-28T09:54:03.348Z", "content": "", "author": "Admin"}}, {"model": "django_summernote.attachment", "pk": 1, "fields": {"name": "IMG_0840-2.jpg", "file": "django-summernote/2021-10-28/44773d36-c61b-4414-b53b-ffe98315f59d.jpg", "uploaded": "2021-10-28T09:31:25.038Z"}}, {"model": "django_summernote.attachment", "pk": 2, "fields": {"name": "IMG_0840.jpg", "file": "django-summernote/2021-10-28/8dd5e547-9fc1-4bfc-b542-af048540b1f8.jpg", "uploaded": "2021-10-28T09:34:09.405Z"}}, {"model": "django_summernote.attachment", "pk": 3, "fields": {"name": "IMG_0840-2.jpg", "file": "django-summernote/2021-10-28/7dfb9ceb-a06b-4aaa-ba8c-661357d95780.jpg", "uploaded": "2021-10-28T09:47:06.500Z"}}, {"model": "django_summernote.attachment", "pk": 4, "fields": {"name": "DJI_0316.jpeg", "file": "django-summernote/2021-10-28/d4f1d530-c31f-4ab0-b51b-13a331534d01.jpeg", "uploaded": "2021-10-28T14:26:59.588Z"}}, {"model": "django_summernote.attachment", "pk": 5, "fields": {"name": "DJI_0316.jpeg", "file": "django-summernote/2021-10-28/d2f7cf9e-f6b2-474c-ac99-4585c5705033.jpeg", "uploaded": "2021-10-28T14:27:31.015Z"}}, {"model": "django_summernote.attachment", "pk": 6, "fields": {"name": "IMG_2026.jpg", "file": "django-summernote/2021-10-28/21cc1c33-b07d-414e-b879-647552559fe1.jpg", "uploaded": "2021-10-28T14:31:33.542Z"}}, {"model": "django_summernote.attachment", "pk": 7, "fields": {"name": "IMG_2026.jpg", "file": "django-summernote/2021-10-28/31b697f1-6abb-4d2d-9a17-be67012ec7ca.jpg", "uploaded": "2021-10-28T14:32:05.960Z"}}]
+[
+    {
+        "model":"admin.logentry",
+        "pk":1,
+        "fields":{
+            "action_time":"2021-10-19T08:13:56.603Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"1",
+            "object_repr":"Blog object (1)",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":2,
+        "fields":{
+            "action_time":"2021-10-19T08:14:05.549Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"1",
+            "object_repr":"Blog object (1)",
+            "action_flag":2,
+            "change_message":"[]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":3,
+        "fields":{
+            "action_time":"2021-10-19T08:14:34.836Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"1",
+            "object_repr":"Blog object (1)",
+            "action_flag":2,
+            "change_message":"[]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":4,
+        "fields":{
+            "action_time":"2021-10-20T08:04:58.366Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"2",
+            "object_repr":"This is just a title <b>THIS IS A HACK </b>",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":5,
+        "fields":{
+            "action_time":"2021-10-20T08:05:25.105Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"2",
+            "object_repr":"This is just a title <b>THIS IS A HACK</b>",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":6,
+        "fields":{
+            "action_time":"2021-10-28T09:20:12.515Z",
+            "user":1,
+            "content_type":9,
+            "object_id":"1",
+            "object_repr":"testestest",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":7,
+        "fields":{
+            "action_time":"2021-10-28T09:33:13.645Z",
+            "user":1,
+            "content_type":9,
+            "object_id":"2",
+            "object_repr":"The Leap",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":8,
+        "fields":{
+            "action_time":"2021-10-28T09:34:30.161Z",
+            "user":1,
+            "content_type":9,
+            "object_id":"2",
+            "object_repr":"The Leap",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":9,
+        "fields":{
+            "action_time":"2021-10-28T09:47:10.915Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"3",
+            "object_repr":"The Leap",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":10,
+        "fields":{
+            "action_time":"2021-10-28T09:54:03.350Z",
+            "user":1,
+            "content_type":9,
+            "object_id":"2",
+            "object_repr":"testuploadpic",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":11,
+        "fields":{
+            "action_time":"2021-10-28T13:29:23.409Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"2",
+            "object_repr":"This is just a title <b>THIS IS A HACK</b>",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":12,
+        "fields":{
+            "action_time":"2021-10-28T13:35:06.502Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"3",
+            "object_repr":"The Leap",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":13,
+        "fields":{
+            "action_time":"2021-10-28T13:53:53.108Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"3",
+            "object_repr":"The Leap",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":14,
+        "fields":{
+            "action_time":"2021-10-28T14:03:22.934Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"2",
+            "object_repr":"This is just a title <b>THIS IS A HACK</b>",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":15,
+        "fields":{
+            "action_time":"2021-10-28T14:03:51.280Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"3",
+            "object_repr":"The Leap",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":16,
+        "fields":{
+            "action_time":"2021-10-28T14:04:03.472Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"3",
+            "object_repr":"The Leap",
+            "action_flag":2,
+            "change_message":"[{\"changed\": {\"fields\": [\"Author\"]}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":17,
+        "fields":{
+            "action_time":"2021-10-28T14:26:42.788Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"4",
+            "object_repr":"More posts!",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":18,
+        "fields":{
+            "action_time":"2021-10-28T14:27:48.040Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"5",
+            "object_repr":"New photo, who dis?",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":19,
+        "fields":{
+            "action_time":"2021-10-28T14:28:36.951Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"6",
+            "object_repr":"Guess what? More Lorem!",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":20,
+        "fields":{
+            "action_time":"2021-10-28T14:29:19.363Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"7",
+            "object_repr":"Update",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":21,
+        "fields":{
+            "action_time":"2021-10-28T14:30:36.268Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"8",
+            "object_repr":"Yet another update",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":22,
+        "fields":{
+            "action_time":"2021-10-28T14:32:32.961Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"9",
+            "object_repr":"Brighton",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":23,
+        "fields":{
+            "action_time":"2021-10-28T14:34:14.744Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"10",
+            "object_repr":"10th post!",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"admin.logentry",
+        "pk":24,
+        "fields":{
+            "action_time":"2021-10-28T14:36:29.735Z",
+            "user":1,
+            "content_type":7,
+            "object_id":"11",
+            "object_repr":"It's done",
+            "action_flag":1,
+            "change_message":"[{\"added\": {}}]"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":1,
+        "fields":{
+            "name":"Can add log entry",
+            "content_type":1,
+            "codename":"add_logentry"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":2,
+        "fields":{
+            "name":"Can change log entry",
+            "content_type":1,
+            "codename":"change_logentry"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":3,
+        "fields":{
+            "name":"Can delete log entry",
+            "content_type":1,
+            "codename":"delete_logentry"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":4,
+        "fields":{
+            "name":"Can view log entry",
+            "content_type":1,
+            "codename":"view_logentry"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":5,
+        "fields":{
+            "name":"Can add permission",
+            "content_type":2,
+            "codename":"add_permission"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":6,
+        "fields":{
+            "name":"Can change permission",
+            "content_type":2,
+            "codename":"change_permission"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":7,
+        "fields":{
+            "name":"Can delete permission",
+            "content_type":2,
+            "codename":"delete_permission"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":8,
+        "fields":{
+            "name":"Can view permission",
+            "content_type":2,
+            "codename":"view_permission"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":9,
+        "fields":{
+            "name":"Can add group",
+            "content_type":3,
+            "codename":"add_group"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":10,
+        "fields":{
+            "name":"Can change group",
+            "content_type":3,
+            "codename":"change_group"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":11,
+        "fields":{
+            "name":"Can delete group",
+            "content_type":3,
+            "codename":"delete_group"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":12,
+        "fields":{
+            "name":"Can view group",
+            "content_type":3,
+            "codename":"view_group"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":13,
+        "fields":{
+            "name":"Can add user",
+            "content_type":4,
+            "codename":"add_user"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":14,
+        "fields":{
+            "name":"Can change user",
+            "content_type":4,
+            "codename":"change_user"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":15,
+        "fields":{
+            "name":"Can delete user",
+            "content_type":4,
+            "codename":"delete_user"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":16,
+        "fields":{
+            "name":"Can view user",
+            "content_type":4,
+            "codename":"view_user"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":17,
+        "fields":{
+            "name":"Can add content type",
+            "content_type":5,
+            "codename":"add_contenttype"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":18,
+        "fields":{
+            "name":"Can change content type",
+            "content_type":5,
+            "codename":"change_contenttype"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":19,
+        "fields":{
+            "name":"Can delete content type",
+            "content_type":5,
+            "codename":"delete_contenttype"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":20,
+        "fields":{
+            "name":"Can view content type",
+            "content_type":5,
+            "codename":"view_contenttype"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":21,
+        "fields":{
+            "name":"Can add session",
+            "content_type":6,
+            "codename":"add_session"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":22,
+        "fields":{
+            "name":"Can change session",
+            "content_type":6,
+            "codename":"change_session"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":23,
+        "fields":{
+            "name":"Can delete session",
+            "content_type":6,
+            "codename":"delete_session"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":24,
+        "fields":{
+            "name":"Can view session",
+            "content_type":6,
+            "codename":"view_session"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":25,
+        "fields":{
+            "name":"Can add blog",
+            "content_type":7,
+            "codename":"add_blog"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":26,
+        "fields":{
+            "name":"Can change blog",
+            "content_type":7,
+            "codename":"change_blog"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":27,
+        "fields":{
+            "name":"Can delete blog",
+            "content_type":7,
+            "codename":"delete_blog"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":28,
+        "fields":{
+            "name":"Can view blog",
+            "content_type":7,
+            "codename":"view_blog"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":29,
+        "fields":{
+            "name":"Can add attachment",
+            "content_type":8,
+            "codename":"add_attachment"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":30,
+        "fields":{
+            "name":"Can change attachment",
+            "content_type":8,
+            "codename":"change_attachment"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":31,
+        "fields":{
+            "name":"Can delete attachment",
+            "content_type":8,
+            "codename":"delete_attachment"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":32,
+        "fields":{
+            "name":"Can view attachment",
+            "content_type":8,
+            "codename":"view_attachment"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":33,
+        "fields":{
+            "name":"Can add post",
+            "content_type":9,
+            "codename":"add_post"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":34,
+        "fields":{
+            "name":"Can change post",
+            "content_type":9,
+            "codename":"change_post"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":35,
+        "fields":{
+            "name":"Can delete post",
+            "content_type":9,
+            "codename":"delete_post"
+        }
+    },
+    {
+        "model":"auth.permission",
+        "pk":36,
+        "fields":{
+            "name":"Can view post",
+            "content_type":9,
+            "codename":"view_post"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":1,
+        "fields":{
+            "app_label":"admin",
+            "model":"logentry"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":2,
+        "fields":{
+            "app_label":"auth",
+            "model":"permission"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":3,
+        "fields":{
+            "app_label":"auth",
+            "model":"group"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":4,
+        "fields":{
+            "app_label":"auth",
+            "model":"user"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":5,
+        "fields":{
+            "app_label":"contenttypes",
+            "model":"contenttype"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":6,
+        "fields":{
+            "app_label":"sessions",
+            "model":"session"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":7,
+        "fields":{
+            "app_label":"blog",
+            "model":"blog"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":8,
+        "fields":{
+            "app_label":"django_summernote",
+            "model":"attachment"
+        }
+    },
+    {
+        "model":"contenttypes.contenttype",
+        "pk":9,
+        "fields":{
+            "app_label":"blog",
+            "model":"post"
+        }
+    },
+    {
+        "model":"sessions.session",
+        "pk":"ok8tlv0kawfh055mqfe6unkowcq4vewi",
+        "fields":{
+            "session_data":".eJxVjEEOwiAQRe_C2pDClAFcuvcMZGCoVA0kpV0Z765NutDtf-_9lwi0rSVsPS9hZnEWSpx-t0jpkesO-E711mRqdV3mKHdFHrTLa-P8vBzu30GhXr410OCsd9EZiBonHqyJHjOiIQ2gEdgmp5mSykqbhNZN1o1RexgJQKF4fwDANTa_:1mck7y:YJ0kQPm0IN9N1DKiXXmdjrDF5wRTG8KI3sPGxOsAvDI",
+            "expire_date":"2021-11-02T08:05:42.895Z"
+        }
+    },
+    {
+        "model":"sessions.session",
+        "pk":"vnufx3ii5gn75wiyytefq015jw0tt3w4",
+        "fields":{
+            "session_data":".eJxVjEEOwiAQRe_C2pDClAFcuvcMZGCoVA0kpV0Z765NutDtf-_9lwi0rSVsPS9hZnEWSpx-t0jpkesO-E711mRqdV3mKHdFHrTLa-P8vBzu30GhXr410OCsd9EZiBonHqyJHjOiIQ2gEdgmp5mSykqbhNZN1o1RexgJQKF4fwDANTa_:1mg0l1:0bjItVmlqwQsn6j9wpxiW10dotmJ2pWoyv3lUYQgmo0",
+            "expire_date":"2021-11-11T08:27:31.569Z"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":1,
+        "fields":{
+            "title":"My first blog post",
+            "body":"This is my first blog post!",
+            "date":"2021-10-19T08:14:34.835Z",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":2,
+        "fields":{
+            "title":"This is just a title <b>THIS IS A HACK</b>",
+            "body":"<p>The main blog post <i>This is a hack</i></p><hr><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>",
+            "date":"2021-10-28T14:03:22.933Z",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":3,
+        "fields":{
+            "title":"The Leap",
+            "body":"<p style=\"text-align: center;\"><span style=\"font-size: 18px; font-family: &quot;Helvetica Neue&quot;;\"><i>The Leap</i></span></p><p style=\"text-align: center;\"><span style=\"font-size: 18px;\"><i>---</i></span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Sardinia, September 2020</span></p><p style=\"text-align: center;\"><span style=\"font-size: 11px;\">Shot on Mavic 2 Zoom</span></p><p style=\"text-align: center;\"><img src=\"/media/django-summernote/2021-10-28/7dfb9ceb-a06b-4aaa-ba8c-661357d95780.jpg\" style=\"width: 698px;\"><br></p><p style=\"text-align: center;\">Like what you see? Come back for new drone pics!</p>",
+            "date":"2021-10-28T14:04:03.471Z",
+            "author":"Yours truly"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":4,
+        "fields":{
+            "title":"More posts!",
+            "body":"<p>We're currently working on showing a maximum of 10 posts per page. Still need to figure out how to do that, though! In the meantime, enjoy some more Lorem Ipsum text!</p><hr><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>",
+            "date":"2021-10-28T14:26:42.787Z",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":5,
+        "fields":{
+            "title":"New photo, who dis?",
+            "body":"<p>Here's another drone shot I took in Sardinia :) Enjoy!</p><p><br></p><p><img src=\"/media/django-summernote/2021-10-28/d2f7cf9e-f6b2-474c-ac99-4585c5705033.jpeg\" style=\"width: 698px;\"><br></p>",
+            "date":"2021-10-28T14:27:48.039Z",
+            "author":"Your friendly neighbourhood droner"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":6,
+        "fields":{
+            "title":"Guess what? More Lorem!",
+            "body":"<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br></p>",
+            "date":"2021-10-28T14:28:36.950Z",
+            "author":"An ancient guy"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":7,
+        "fields":{
+            "title":"Update",
+            "body":"<p>I know these posts are getting tiresome, but we really need to get to more than 10 posts! Bear with us.</p>",
+            "date":"2021-10-28T14:29:19.362Z",
+            "author":"A frustrated dev"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":8,
+        "fields":{
+            "title":"Yet another update",
+            "body":"<p>#RoadTo10+Posts</p>",
+            "date":"2021-10-28T14:30:36.267Z",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":9,
+        "fields":{
+            "title":"Brighton",
+            "body":"<p>Shot a few weeks ago in Brighton. What do you think?</p><p>#RoadTo10+Posts</p><p><img src=\"/media/django-summernote/2021-10-28/31b697f1-6abb-4d2d-9a17-be67012ec7ca.jpg\" style=\"width: 698px;\"><br></p>",
+            "date":"2021-10-28T14:32:32.960Z",
+            "author":"A random photographer"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":10,
+        "fields":{
+            "title":"10th post!",
+            "body":"I can't believe I'm writing this, but this is officially the 10th post! Only one more and we'll finally be able to start working on the 'next page' feature.",
+            "date":"2021-10-28T14:34:14.743Z",
+            "author":"A baffled coder"
+        }
+    },
+    {
+        "model":"blog.blog",
+        "pk":11,
+        "fields":{
+            "title":"It's done",
+            "body":"<p>My job is done, 11th post it is. In the meantime, I'm also checking whether gifs are supported on django-summernote.</p><p><br></p><p><img src=\"https://media.giphy.com/media/5Ivz8uxHriaAw/giphy.gif\" style=\"width: 480px;\"></p><p><br></p><p>P.S.: Looks like it!</p>",
+            "date":"2021-10-28T14:36:29.734Z",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.post",
+        "pk":1,
+        "fields":{
+            "title":"testestest",
+            "body":"<p><img src=\"https://cdn.vidaativa.pt/uploads/2018/03/welsh-corgi-cardigan-cao.jpg\" style=\"width: 698px;\"><br></p>",
+            "date":"2021-10-28T09:20:12.513Z",
+            "content":"<p><img src=\"https://cdn.vidaativa.pt/uploads/2018/03/welsh-corgi-cardigan-cao.jpg\" style=\"width: 698px;\"><br></p>",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"blog.post",
+        "pk":2,
+        "fields":{
+            "title":"testuploadpic",
+            "body":"<p style=\"text-align: center;\"><i><span style=\"font-size: 18px;\">The Leap</span></i></p><p style=\"text-align: center;\"><i><span style=\"font-size: 18px;\">---</span></i></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">﻿Sardinia, September 2020</span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Shot on Mavic 2 Zoom</span></p><p style=\"text-align: center;\"><span style=\"font-size: 14px;\"><br></span></p><p><div style=\"text-align: center;\"><img src=\"/media/django-summernote/2021-10-28/8dd5e547-9fc1-4bfc-b542-af048540b1f8.jpg\" style=\"width: 698px;\"></div><i><span style=\"font-size: 18px;\"><br></span></i></p>",
+            "date":"2021-10-28T09:54:03.348Z",
+            "content":"",
+            "author":"Admin"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":1,
+        "fields":{
+            "name":"IMG_0840-2.jpg",
+            "file":"django-summernote/2021-10-28/44773d36-c61b-4414-b53b-ffe98315f59d.jpg",
+            "uploaded":"2021-10-28T09:31:25.038Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":2,
+        "fields":{
+            "name":"IMG_0840.jpg",
+            "file":"django-summernote/2021-10-28/8dd5e547-9fc1-4bfc-b542-af048540b1f8.jpg",
+            "uploaded":"2021-10-28T09:34:09.405Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":3,
+        "fields":{
+            "name":"IMG_0840-2.jpg",
+            "file":"django-summernote/2021-10-28/7dfb9ceb-a06b-4aaa-ba8c-661357d95780.jpg",
+            "uploaded":"2021-10-28T09:47:06.500Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":4,
+        "fields":{
+            "name":"DJI_0316.jpeg",
+            "file":"django-summernote/2021-10-28/d4f1d530-c31f-4ab0-b51b-13a331534d01.jpeg",
+            "uploaded":"2021-10-28T14:26:59.588Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":5,
+        "fields":{
+            "name":"DJI_0316.jpeg",
+            "file":"django-summernote/2021-10-28/d2f7cf9e-f6b2-474c-ac99-4585c5705033.jpeg",
+            "uploaded":"2021-10-28T14:27:31.015Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":6,
+        "fields":{
+            "name":"IMG_2026.jpg",
+            "file":"django-summernote/2021-10-28/21cc1c33-b07d-414e-b879-647552559fe1.jpg",
+            "uploaded":"2021-10-28T14:31:33.542Z"
+        }
+    },
+    {
+        "model":"django_summernote.attachment",
+        "pk":7,
+        "fields":{
+            "name":"IMG_2026.jpg",
+            "file":"django-summernote/2021-10-28/31b697f1-6abb-4d2d-9a17-be67012ec7ca.jpg",
+            "uploaded":"2021-10-28T14:32:05.960Z"
+        }
+    }
+]
